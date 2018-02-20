@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.6" client="site" method="upgrade">
+    <name>ETD Newsfeed Facebook</name>
+    <creationDate>19 février 2018</creationDate>
+    <author>ETD Solutions</author>
+    <authorEmail>contact@etd-solutions.com</authorEmail>
+    <authorUrl>http://etd-solutions.com</authorUrl>
+    <copyright>Copyright (C) 2018 ETD Solutions, SARL Etudoo. Tous droits réservés.</copyright>
+    <version>1.0.0</version>
+    <description>MOD_ETDNEWSFEEDFACEBOOK_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_etdnewsfeedfacebook">mod_etdnewsfeedfacebook.php</filename>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+        <filename>mod_etdnewsfeedfacebook.xml</filename>
+    </files>
+    <languages>
+        <language tag="fr-FR">language/fr-FR/fr-FR.mod_etdnewsfeedfacebook.ini</language>
+        <language tag="fr-FR">language/fr-FR/fr-FR.mod_etdnewsfeedfacebook.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params" addfieldpath="/modules/mod_etdnewsfeedfacebook/fields">
+
+            <fieldset name="basic" label="MOD_ETDSLIDESHOW_OPTIONS_BASIC">
+
+                <field
+                        name="app_id"
+                        type="text"
+                        label="MOD_ETDNEWSFEEDFACEBOOK_APPID_LABEL"
+                        description="MOD_ETDNEWSFEEDFACEBOOK_APPID_DESC"
+                />
+
+                <field
+                        name="app_secret"
+                        type="text"
+                        label="MOD_ETDNEWSFEEDFACEBOOK_APPSECRET_LABEL"
+                        description="MOD_ETDNEWSFEEDFACEBOOK_APPSECRET_DESC"
+                />
+
+                <field
+                        name="page_id"
+                        type="text"
+                        label="MOD_ETDNEWSFEEDFACEBOOK_PAGEID_LABEL"
+                        description="MOD_ETDNEWSFEEDFACEBOOK_PAGEID_DESC"
+                />
+
+                <field
+                        name="feed_limit"
+                        type="text"
+                        default="3"
+                        label="MOD_ETDNEWSFEEDFACEBOOK_FEEDLIMIT_LABEL"
+                        description="MOD_ETDNEWSFEEDFACEBOOK_FEEDLIMIT_DESC"
+                />
+
+            </fieldset>
+        </fields>
+    </config>
+</extension>
