@@ -6,18 +6,22 @@
     <authorEmail>contact@etd-solutions.com</authorEmail>
     <authorUrl>http://etd-solutions.com</authorUrl>
     <copyright>Copyright (C) 2018 ETD Solutions, SARL Etudoo. Tous droits réservés.</copyright>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>MOD_ETDNEWSFEEDFACEBOOK_XML_DESCRIPTION</description>
+
     <files>
         <filename module="mod_etdnewsfeedfacebook">mod_etdnewsfeedfacebook.php</filename>
         <folder>language</folder>
         <folder>tmpl</folder>
         <filename>mod_etdnewsfeedfacebook.xml</filename>
+        <filename>composer.json</filename>
     </files>
+
     <languages>
         <language tag="fr-FR">language/fr-FR/fr-FR.mod_etdnewsfeedfacebook.ini</language>
         <language tag="fr-FR">language/fr-FR/fr-FR.mod_etdnewsfeedfacebook.sys.ini</language>
     </languages>
+
     <config>
         <fields name="params" addfieldpath="/modules/mod_etdnewsfeedfacebook/fields">
 
