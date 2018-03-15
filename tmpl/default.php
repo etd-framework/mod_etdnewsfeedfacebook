@@ -11,7 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
-require_once __DIR__ . '/../vendor/autoload.php'; // change path as needed
+require_once JPATH_BASE . '/modules/mod_etdnewsfeedfacebook/vendor/autoload.php'; // change path as needed
 
 $config = [
     'app_id' => $params->get('app_id'),
